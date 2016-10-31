@@ -1,0 +1,12 @@
+version: '2'
+services:
+ proxy:
+   image: ${PROXY_IMAGE_LATEST}
+   restart: always
+   depends_on:
+     - frontend
+   ports:
+     - 8080:80
+ frontend:
+   image: ${IMAGE_LATEST}
+   restart: always

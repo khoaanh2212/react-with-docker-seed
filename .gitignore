@@ -1,0 +1,5 @@
+.idea/*
+build/build.tar.gz
+node_modules/
+dist/
+npm-debug.log
